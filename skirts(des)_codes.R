@@ -1,5 +1,5 @@
 #Loading data set
-R = read.csv("C:\\Users\\Admin\\Desktop\\Blog post\\R (Edvancer)\\Data\\Data\\skirts.csv")
+R = read.csv("file path")
 #Converting data set into time series data set
 R_ = ts(R,start=c(1866)) #Starting from 1866
 #Plot time series to see which model to fit
