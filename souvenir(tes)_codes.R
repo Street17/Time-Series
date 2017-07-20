@@ -25,7 +25,7 @@ library(forecast)
 R_future = forecast:::forecast.HoltWinters(R_1_forecast, h=60)
 #Plotting forecast for next 60 periods
 plot(R_future)
-#Checking for qnorm
+#Checking if residuals are showing any pattern
 qqnorm(R_future$residuals) #Everything seems good here as residuals have stayed on a straight line along the diagonal
 plot(R_future$residuals) #Everything seems good here as not more than spike has crossed the significance margin
 hist(R_future$residuals) #Everything seems good here as residuals are following close to normal distribution
