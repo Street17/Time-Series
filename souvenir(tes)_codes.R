@@ -1,5 +1,5 @@
 #Loading data set
-R = read.csv("C:\\Users\\Admin\\Desktop\\Blog post\\R (Edvancer)\\Data\\Data\\souvenir.csv")
+R = read.csv("file path")
 #Looking at the data and first few values
 str(R)
 head(R)
