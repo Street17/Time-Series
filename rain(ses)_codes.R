@@ -12,10 +12,12 @@ install.packages('forecast')
 library(forecast) #Install library
 #Forecasting rain for 5 future periods ahead
 future_rain = forecast:::forecast.HoltWinters(Rain_forecast, h = 5)
-#Plotting in graph to see confidence intervals for prediction
+#Plotting future_rain to see confidence intervals for prediction
 plot(future_rain)
 #Checking how model is doing using residuals. For better predictions residuals should be around mean 0
-plot(future_rain$residuals)
-qqnorm(future_rain$residuals) #Should be on straight line along the diagonal
-hist(future_rain$residuals) #Checking if residuals are close to normal or not
+plot(future_rain$residuals) #Everything looks good here
+#Plotting residuals qqnorm function
+qqnorm(future_rain$residuals) #Residuals should be on straight line along the diagonal
+#plotting histograms to check if residuals are close to normal or not
+hist(future_rain$residuals) 
 #Seems everything is good SES looks best fit for this dataset
