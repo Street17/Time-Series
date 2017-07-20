@@ -1,5 +1,5 @@
 Hi folks!
 
-Here I have implemented single exponential smoothing technique on rain dataset to predict rain for 5 years ahead. 
+Here I have shown with implementation how and when to use single exponential smoothing (SES), double exponential smoothing (DES) and triple exponential smoothing (TES) technique of time series. I have used different dataset to demonstrate each technique.  
 
-Required codes and data set is attached through which you can reproduce my results. Happy learning :)
+Required codes and data set are attached through which you can reproduce my results. Happy learning :)
