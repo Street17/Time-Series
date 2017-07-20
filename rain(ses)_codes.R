@@ -1,5 +1,5 @@
 #Loading data set of rain recorded over years
-R = read.csv("C:\\Users\\Admin\\Desktop\\Blog post\\R (Edvancer)\\Data\\Data\\rain.csv")
+R = read.csv("file path")
 #Converting R data set into a time series data set
 R_ = ts(R, start=c(1813)) #Yearly data starting from 1813 (external information)
 #Plot R_
